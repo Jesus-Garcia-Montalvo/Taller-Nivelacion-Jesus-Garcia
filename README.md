@@ -27,27 +27,27 @@
 #### 6. Mencionar al menos tres tipos de Hooks en ReactJS y explicar brevemente para qué se utilizan.
 
 > - **useState**: Gestiona el estado local en componentes funcionales.
-- **useMemo**: Memoriza el resultado de una función para optimizar el rendimiento.
-- **useContext**: Facilita el acceso a datos o funcionalidades compartidas entre componentes.
+>  - **useMemo**: Memoriza el resultado de una función para optimizar el rendimiento.
+>  - **useContext**: Facilita el acceso a datos o funcionalidades compartidas entre componentes.
 
 #### 7. ¿Cuáles son las reglas de uso para los Hooks en ReactJS?
 
 > - Solo deben ser utilizados en componentes de función.
-- No usar dentro de ciclos, condiciones o funciones anidadas.
-- No llamar desde funciones regulares de JavaScript.
-- Llamar en el mismo orden en todas las renderizaciones.
-- Nombrar los Hooks personalizados con 'use'.
+> - No usar dentro de ciclos, condiciones o funciones anidadas.
+> - No llamar desde funciones regulares de JavaScript.
+> - Llamar en el mismo orden en todas las renderizaciones.
+> - Nombrar los Hooks personalizados con 'use'.
 
 #### 8. Explicar qué es React Router DOM versión 6, para qué se utiliza y cuáles son sus principales componentes y Hooks.
-> 
-React Router DOM es una biblioteca que facilita el enrutado declarativo en aplicaciones de React. Sus componentes incluyen `BrowserRouter`, `Route`, `Link`, y sus Hooks incluyen `useParams`, `useNavigate`, y `useLocation`.
+
+> React Router DOM es una biblioteca que facilita el enrutado declarativo en aplicaciones de React. Sus componentes incluyen `BrowserRouter`, `Route`, `Link`, y sus Hooks incluyen `useParams`, `useNavigate`, y `useLocation`.
 
 #### 9. Explicar cómo se realiza la navegación entre diferentes páginas utilizando React Router DOM.
 
 > 1. Instalar React Router DOM: `npm install react-router-dom`.
-2. Configurar rutas y envolver la aplicación con `BrowserRouter`.
-3. Configurar las rutas usando el componente `Route`.
-4. Utilizar el componente `Link` para crear enlaces entre páginas.
+> 2. Configurar rutas y envolver la aplicación con `BrowserRouter`.
+> 3. Configurar las rutas usando el componente `Route`.
+> 4. Utilizar el componente `Link` para crear enlaces entre páginas.
 
 #### 10. ¿Cómo se definen rutas en React Router DOM?
 

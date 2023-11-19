@@ -43,30 +43,30 @@
 React Router DOM es una biblioteca que facilita el enrutado declarativo en aplicaciones de React. Sus componentes incluyen `BrowserRouter`, `Route`, `Link`, y sus Hooks incluyen `useParams`, `useNavigate`, y `useLocation`.
 
 #### 9. Explicar cómo se realiza la navegación entre diferentes páginas utilizando React Router DOM.
-> 
-1. Instalar React Router DOM: `npm install react-router-dom`.
+
+> 1. Instalar React Router DOM: `npm install react-router-dom`.
 2. Configurar rutas y envolver la aplicación con `BrowserRouter`.
 3. Configurar las rutas usando el componente `Route`.
 4. Utilizar el componente `Link` para crear enlaces entre páginas.
 
 #### 10. ¿Cómo se definen rutas en React Router DOM?
 
-> Se definen usando el componente `Route` dentro de `BrowserRouter`, especificando el `path` y el componente asociado.
+> `path` y el componente asociado.> Se definen usando el componente `Route` dentro de `BrowserRouter`, especificando el `path` y el componente asociado.
 
 #### 11. Describir cómo crear un proyecto ReactJS con Vite
 
 > 1. Instalar Vite: `npm create vite my-react-app --template react`.
-2. Cambiar al directorio del proyecto: `cd my-react-app`.
-3. Iniciar la aplicación: `npm install` y `npm run dev`.
+> 2. Cambiar al directorio del proyecto: `cd my-react-app`.
+> 3. Iniciar la aplicación: `npm install` y `npm run dev`.
 
 #### 12. Describir cómo desplegar un JSON server en cualquier Hosting free o servicio en la nube gratuito de su elección
 
 > 1. Crear una carpeta para el mini backend.
-2. Iniciar un proyecto npm: `npm init -y`.
-3. Instalar JSON Server: `npm install json-server`.
-4. Crear el archivo `.gitignore`.
-5. Crear la estructura de carpetas y configurar `db.json`.
-6. Configurar `index.js`.
-7. Ejecutar el servidor localmente: `node src/index.js`.
-8. Guardar en GitHub: `git init`, `git add .`, `git commit -m "Primer commit"`.
-9. Desplegar en un servicio en la nube gratuito de su elección.
+> 2. Iniciar un proyecto npm: `npm init -y`.
+> 3. Instalar JSON Server: `npm install json-server`.
+> 4. Crear el archivo `.gitignore`.
+> 5. Crear la estructura de carpetas y configurar `db.json`.
+> 6. Configurar `index.js`.
+>7. Ejecutar el servidor localmente: `node src/index.js`.
+> 8. Guardar en GitHub: `git init`, `git add .`, `git commit -m "Primer commit"`.
+> 9. Desplegar en un servicio en la nube gratuito de su elección.

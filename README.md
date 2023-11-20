@@ -10,177 +10,119 @@
 
 #### 2. Definir qué es un componente en ReactJS y mencionar los tipos de componentes que existen.
 
-> los componentes de react funcionan de forma similar a las funciones de javascript, ya que aceptan entradas arbitrarias denominadas propiedades o props y existe dos tipos de componentes los **funcionales** y componentes de **clases**.
+> Los componentes en React funcionan de manera similar a las funciones de JavaScript, aceptando propiedades o "props". Hay dos tipos de componentes: funcionales y de clases.
 
 #### 3. ¿Qué es el Virtual DOM y cuál es su función en ReactJS?
 
-> el virtual dom es una biblioteca de javascript, donde una representación ideal o “virtual” de la iu se mantiene en memoria y en sincronía con el dom “real”, su función principal es mejorar el rendimiento y eficiencia en la manipulación del dom, este proceso se conoce como reconciliación.
+> El Virtual DOM es una representación ideal o "virtual" de la interfaz de usuario que se mantiene en memoria. Su función principal es mejorar el rendimiento y eficiencia en la manipulación del DOM a través de un proceso conocido como reconciliación.
 
 #### 4. ¿Qué es JSX en ReactJS y por qué es importante?
 
-> jsx es una extensión de sintaxis para javascript que permite escribir marcado similar a html dentro de una archivo javascript.
-> permite a los desarrolladores describir la estructura de los componentes de manera más declarativa y legible, mejorando la eficiencia del desarrollo se compila a código javascript puro.
-
-> la importancia de jsx radica en su capacidad para representar visualmente la jerarquía de componentes de react de manera clara y concisa, facilita la integración de lógica y presentación en un solo archivo, mejorando la modularidad y la mantenibilidad del código. la importancia de jsx radica en su capacidad para representar visualmente la jerarquía de componentes de react de manera clara y concisa, facilita la integración de lógica y presentación en un solo archivo, mejorando la modularidad y la mantenibilidad del código.
+> JSX es una extensión de sintaxis para JavaScript que permite escribir marcado similar a HTML dentro de un archivo JavaScript. Facilita la representación visual de la jerarquía de componentes de React de manera clara y concisa, mejorando la eficiencia del desarrollo.
 
 #### 5. ¿Qué es un Hook en ReactJS y cuál es su propósito?
 
-> Los hooks son esenciales para agregar funcionalidades a los componentes de función y gestionar el estado, los efectos y otros aspectos del ciclo de vida en aplicaciones React de manera más sencilla y declarativa, sin necesidad de convertirse en componentes de clase.
-
-> Algunos de los **Hooks** más comunes:
-
-> - useState
-> - useEffect
-> - useContext
-
-- useReducer
-
-> su mayor proposito es simplifican la gestión del estado, efectos secundarios y la lógica en los componentes, haciendo que el código sea más limpio, modular y fácil de entender.
+> Los Hooks en React son funciones que permiten agregar funcionalidades a los componentes de función, gestionando el estado, efectos y otros aspectos del ciclo de vida de manera declarativa. Algunos Hooks comunes incluyen `useState`, `useEffect`, y `useContext`.
 
 #### 6. Mencionar al menos tres tipos de Hooks en ReactJS y explicar brevemente para qué se utilizan.
 
-> - **useState**: permite a los componentes funcionales tener un **estado** local, que puede almacenar valores, y cuando el estado cambia, React **renderiza** el componente para reflejar esos cambios en la interfaz de usuario.
->   devuelve un array con dos elementos: la variable de estado actual y una función para actualizar esa variable.
-
-> - **useMemo**: Se utiliza para memorizar el resultado de una función y evitar su recálculo innecesario en** re-renderizaciones** posteriores, ayuda a optimizar el rendimiento evitando el cálculo redundante de valores.
->   Sin embargo, es importante usarlo con moderación y entender sus efectos en el rendimiento, ya que su uso excesivo puede llevar a una complejidad innecesaria en el código.
-
-> - **useContext**: Es especialmente útil cuando deseas acceder a datos o funcionalidades compartidas en varios componentes sin tener que pasar propiedades manualmente a través de cada nivel de la jerarquía de componentes y Sirve para compartir valores entre componentes de manera eficiente y sencilla.
->   Facilita la gestión del estado compartido y mejora la modularidad y la reutilización del código al evitar la necesidad de pasar **props** manualmente a través de múltiples niveles de componentes.
+> - **useState**: Gestiona el estado local en componentes funcionales.
+> - **useMemo**: Memoriza el resultado de una función para optimizar el rendimiento.
+> - **useContext**: Facilita el acceso a datos o funcionalidades compartidas entre componentes.
 
 #### 7. ¿Cuáles son las reglas de uso para los Hooks en ReactJS?
 
-> - Solo deben ser utilizados en componentes de función No deben ser utilizados en componentes de clase.
-
-> - No usar Hooks dentro de ciclos, condiciones o funciones anidadas. Siempre úsalos en el nivel superior del componente de función.
-
-> - No intentes llamar a Hooks desde funciones regulares de JavaScript.
-
-> - llamar a los Hooks en el mismo orden en todas las renderizaciones del componente Esto para que React asocié correctamente el estado interno de cada Hook con el componente correspondiente.
-
-> - Nombrar los Hooks personalizados con 'use'
+> - Solo deben ser utilizados en componentes de función.
+> - No usar dentro de ciclos, condiciones o funciones anidadas.
+> - No llamar desde funciones regulares de JavaScript.
+> - Llamar en el mismo orden en todas las renderizaciones.
+> - Nombrar los Hooks personalizados con 'use'.
 
 #### 8. Explicar qué es React Router DOM versión 6, para qué se utiliza y cuáles son sus principales componentes y Hooks.
 
-> React Router DOM es una biblioteca que te permite hacer **enrutados** **declarativos** en nuestras aplicaciones . Hace más fácil cambiar entre diferentes partes de una aplicación de React según la URL actual, en aplicaciones de una sola página. Antes, esto implicaba gestionar manualmente las URL o cargar páginas HTML individuales para cada ruta. Pero con React Router DOM, simplemente defines las rutas y los componentes asociados en un solo lugar, haciendo todo este proceso mucho más sencillo.
-
-###### Componentes
-
-> - **BrowserRouter**
-> - **Route**
-> - **Link**
-> - **NavLink**
-
-> ###### Hooks
-
-> - **useParams**
-> - **useNavigate**
-> - **useLocation**
+> React Router DOM es una biblioteca que facilita el enrutado declarativo en aplicaciones de React. Sus componentes incluyen `BrowserRouter`, `Route`, `Link`, y sus Hooks incluyen `useParams`, `useNavigate`, y `useLocation`.
 
 #### 9. Explicar cómo se realiza la navegación entre diferentes páginas utilizando React Router DOM.
 
-> ##### PASO 1. instalada la biblioteca React Router DOM
-
-    npm install react-router-dom
-
-> ##### PASO 2. Configuración de rutas:
-
-> Importar los componentes y funciones necesarios de React Router y define las rutas de la aplicación.
-
-> ##### PASO 3. BrowserRouter :
-
-> luedo envolmemos la aplicacion con **BrowserRouter** es el compoennete nos permite enlazar las rutas o en lasar la aplicacion con el navegador
-
-> ##### PASO 4. Configurar las rutas: utilizando Router para envolver tus rutas.
->
-> Luego, utiliza el componente Route con el atributo path y el elemento (el componente) para definir cada ruta y especificar qué componente debe mostrarse.
-
-> ##### PASO 5. El BrowserRouter.
->
-> que proporciona la infraestructura para la navegación.
->
-> #####PASO 6. Navegación entre páginas
-> ya puedes usar el componente Link para crear enlaces entre tus páginas. En lugar de utilizar el componente <a> tradicional de HTML, utiliza Link para mantener el estado de la aplicación sin recargar la página completa.
+> 1. Instalar React Router DOM: `npm install react-router-dom`.
+> 2. Configurar rutas y envolver la aplicación con `BrowserRouter`.
+> 3. Configurar las rutas usando el componente `Route`.
+> 4. Utilizar el componente `Link` para crear enlaces entre páginas.
 
 #### 10. ¿Cómo se definen rutas en React Router DOM?
 
-> nota: La respuesta se encuentra en la pregunta anterior.
+> `path` y el componente asociado.> Se definen usando el componente `Route` dentro de `BrowserRouter`, especificando el `path` y el componente asociado.
 
 #### 11. Describir cómo crear un proyecto ReactJS con Vite
 
-> ##### PASO 1: Instalación de Vite:
->
-> crear un nuevo proyecto de React con Vite utilizando el siguiente comando.
-
->     npm create vite my-react-app --template react
-
-> ##### PASO 2: Cambio al Directorio del Proyecto
-
-> navega al directorio del proyecto.
-
->     cd my-react-app
-
-> ##### PASO 3: Iniciar la Aplicación
->
-> Para iniciar la aplicación.
-
-    npm install
-    npm run dev
-
-> Por defecto, El Proyecto estará disponible en http://localhost:3000.
+> 1. Instalar Vite: `npm create vite my-react-app --template react`.
+> 2. Cambiar al directorio del proyecto: `cd my-react-app`.
+> 3. Iniciar la aplicación: `npm install` y `npm run dev`.
 
 #### 12. Describir cómo desplegar un JSON server en cualquier Hosting free o servicio en la nube gratuito de su elección
 
-> ##### Paso 1: Crear una carpeta para el mini back.
+> 1. Crear una carpeta para el mini backend.
+> 2. Iniciar un proyecto npm: `npm init -y`.
+> 3. Instalar JSON Server: `npm install json-server`.
+> 4. Crear el archivo `.gitignore`.
+> 5. Crear la estructura de carpetas y configurar `db.json`.
+> 6. Configurar `index.js`.
+> 7. Ejecutar el servidor localmente: `node src/index.js`.
+> 8. Guardar en GitHub: `git init`, `git add .`, `git commit -m "Primer commit"`.
+> 9. Desplegar en un servicio en la nube gratuito de su elección.
 
-> ##### Paso 2: Iniciar un proyecto npm:
+# Gestion de estados y datos con react context y usereducer. ⚛️ 🌐
 
-     npm init -y
+---
 
-> Este comando inicializa un proyecto npm con configuraciones por defecto.
+## Preguntas teóricas
 
-> ##### Paso 3: Instalar JSON Server:
+---
 
-     npm install json-server
+## Preguntas teóricas
 
-> ##### Paso 4: Crear el archivo .gitignore:
+#### 1. ¿Qué es React Context y para qué se utiliza en el desarrollo web con React?
 
-> A la misma altura que el archivo package.json, crea un archivo llamado .gitignore y agrega la línea:}
+> es una característica de React que simplifica la transferencia de datos entre componentes al permitir que la información atraviese el árbol de componentes sin la necesidad de pasar propiedades manualmente en cada nivel. Esto es valioso cuando múltiples componentes requieren compartir una cantidad significativa de datos entre sí.
 
-    node_modules/
+> no solo simplifica la transferencia de datos, sino que también manejar estados globales en aplicaciones donde la información compartida entre componentes es sustancial y compleja.
 
-> Esto asegura que la carpeta node_modules no se incluirá en el repositorio de Git.
+#### 2. Describir cómo se crea un contexto en React y cómo se proporciona y consume información a través de él.
 
-> ##### Paso 5: Crear la estructura de carpetas:
+> Para crear un contexto en React, se utiliza la función `createContext()`. Luego, el contexto se proporciona y consume utilizando los componentes `Provider` y `Consumer`, respectivamente. El `Provider` se utiliza para envolver la parte de la aplicación donde se compartirá el contexto, y el `Consumer` se utiliza para consumir el valor del contexto en componentes específicos.
 
-    - mini-back/
-      - src/
-        - index.js
-      - data/
-        - db.json
-      - .gitignore
-      - package.json
+#### 3. ¿Cuál es la ventaja de utilizar React Context en lugar de pasar props a través de múltiples componentes?
 
-> ##### Paso 6: Configurar db.json:
+> La ventaja de utilizar React Context es que evita la prop drilling o pasar props a través de varios niveles de componentes. Esto mejora la limpieza del código y la legibilidad, ya que el valor del contexto se puede acceder directamente en cualquier nivel sin tener que pasar manualmente las props en cada nivel.
 
-> Dentro de la carpeta data, crea un archivo llamado db.json con tus datos.
+#### 4. Explicar el propósito de useReducer en React y cómo se diferencia de useState.
 
-> ##### Paso 7: Configurar index.js:
->
-> Agregamos el código de configuración del JSON Server en el index.js. importante verificar las rutas del archivo en el JSON server.
+> tiene como propósito gestionar el estado de manera más estructurada y compleja en comparación con useState. Mientras `useState` es ideal para manejar estados simples en un componente individual, useReducer ofrece una estructura más organizada para gestionar estados complejos a nivel global, compartiendo datos entre componentes en aplicaciones más extensas.
 
-> ##### Paso 8: Ejecutar el servidor localmente
+#### 5. Describe los argumentos que toma la función useReducer.
 
-    node src/index.js
+> La función `useReducer` toma dos argumentos: un `reducer` y un `estado inicial`. El `reducer` es una función que especifica cómo el estado debería cambiar en respuesta a una acción, y el `estado inicial` es el estado inicial del componente.
 
-> Esto iniciará tu servidor localmente. Asegúrate de que funciona correctamente antes de pasar al siguiente paso.
+#### 6. ¿Por qué es útil utilizar useReducer para gestionar el estado en aplicaciones más complejas?
 
-> ##### Paso 9: Guardar en GitHub:
+> `useReducer` es útil en aplicaciones más complejas porque proporciona una forma más estructurada de gestionar el estado. Permite actualizar el estado, lo que facilita el mantenimiento y la comprensión del código en aplicaciones grandes y complejas.
 
-    git init
-    git add .
-    git commit -m "Primer commit"
+#### 7. ¿Cómo se puede utilizar React Context junto con useReducer para gestionar el estado global en una aplicación de React?
 
-> ##### Paso 10: Desplegar en un servicio en la nube:
+> Para mí, la clave está en separar qué contexto es específico, por ejemplo, productos o usuarios, conceptos muy específicos de la aplicación que pueden compartir información entre ellos, como un producto y un carrito.
 
-> Una vez corriendo el proyecto correctamente, lo que vamos a hacer es que desplegamos en un servicio en la nube gratuito de su elección.
+> Cuando se trata de trabajar con aspectos globales, como la carga de la aplicación, el inicio de sesión y los estados globales de errores, se puede utilizar React Context junto con useReducer. Esto se logra al crear un contexto que abarque un proveedor que utilice useReducer para gestionar el estado global. Los componentes que necesitan acceder a este estado global pueden consumir este contexto y enviar acciones al `dispatch` proporcionado por useReducer.
+
+#### 8. ¿Por qué es importante tener un sistema de gestión de estado global en aplicaciones React más grandes?
+
+> Un sistema de gestión de estado global en aplicaciones React más grandes es importante porque facilita la gestión y actualización del estado en toda la aplicación. Ayuda a evitar la complejidad de pasar props a través de múltiples componentes y centraliza la lógica de estado, lo que mejora la mantenibilidad del código.
+
+#### 9. Menciona al menos tres ventajas de utilizar una combinación de React Context y useReducer en comparación con el manejo de estado local en componentes.
+
+> - **Evita la prop drilling**: No es necesario pasar props a través de varios niveles.
+> - **Centraliza la gestión del estado**: Mejora la estructura y comprensión del código.
+> - **Facilita la gestión de acciones complejas**: `useReducer` permite lógica avanzada en la actualización del estado.
+
+#### 10. ¿En qué situaciones podría ser beneficioso migrar de un enfoque de manejo de estado local a un enfoque de estado global utilizando React Context y useReducer?
+
+> Podría ser beneficioso migrar a un enfoque de estado global cuando la aplicación crece en complejidad y la gestión del estado local se vuelve difícil de mantener. Además, en situaciones donde varios componentes necesitan acceder y actualizar el mismo estado, migrar a un enfoque global simplifica la comunicación entre componentes y mejora la organización del código.

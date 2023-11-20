@@ -127,9 +127,9 @@
 #### 9. Menciona al menos tres ventajas de utilizar una combinación de React Context y useReducer en comparación con el manejo de estado local en componentes.
 
 > - **Evita la prop drilling**: No es necesario pasar props a través de varios niveles.
-- **Centraliza la gestión del estado**: Mejora la estructura y comprensión del código.
-- **Facilita la gestión de acciones complejas**: `useReducer` permite lógica avanzada en la actualización del estado.
+> - **Centraliza la gestión del estado**: Mejora la estructura y comprensión del código.
+> - **Facilita la gestión de acciones complejas**: `useReducer` permite lógica avanzada en la actualización del estado.
 
 #### 10. ¿En qué situaciones podría ser beneficioso migrar de un enfoque de manejo de estado local a un enfoque de estado global utilizando React Context y useReducer?
-> 
-Podría ser beneficioso migrar a un enfoque de estado global cuando la aplicación crece en complejidad y la gestión del estado local se vuelve difícil de mantener. Además, en situaciones donde varios componentes necesitan acceder y actualizar el mismo estado, migrar a un enfoque global simplifica la comunicación entre componentes y mejora la organización del código.
+
+> Podría ser beneficioso migrar a un enfoque de estado global cuando la aplicación crece en complejidad y la gestión del estado local se vuelve difícil de mantener. Además, en situaciones donde varios componentes necesitan acceder y actualizar el mismo estado, migrar a un enfoque global simplifica la comunicación entre componentes y mejora la organización del código.

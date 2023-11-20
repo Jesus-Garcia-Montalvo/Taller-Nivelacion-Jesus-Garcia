@@ -73,9 +73,11 @@
 
 
 
-#Gestion de estados y datos con react context y usereducer.  ⚛️ 🌐
+ # Gestion de estados y datos con react context y usereducer. ⚛️ 🌐
 
- 
+---
+
+## Preguntas teóricas
 
 ---
 

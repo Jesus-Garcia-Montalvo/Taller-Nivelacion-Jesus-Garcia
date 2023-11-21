@@ -1,11 +1,10 @@
 import React from "react";
+import MiComponente from "../../componentes/MiComponente/MiComponente";
 
 function Home() {
   return (
     <>
-      <div>
-        <h1>Hola Home</h1>
-      </div>
+      <MiComponente />
     </>
   );
 }

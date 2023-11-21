@@ -7,9 +7,6 @@ const Nav = () => {
     <nav>
       <ul>
         <li>
-          <Link to="/">Inicio</Link>
-        </li>
-        <li>
           <Link to="/micomponente">Mi Componente</Link>
         </li>
         <li>
@@ -17,6 +14,9 @@ const Nav = () => {
         </li>
         <li>
           <Link to="/misproductos">Mis Productos</Link>
+        </li>
+        <li>
+          <Link to="/miContadorUseReducer">MiContadorConUseReducer</Link>
         </li>
       </ul>
     </nav>

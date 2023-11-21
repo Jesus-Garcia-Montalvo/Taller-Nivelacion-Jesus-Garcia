@@ -6,6 +6,7 @@ import Nav from "../componentes/Nav/Nav";
 import MiContador from "../componentes/MiContador/MiContador";
 import MiComponente from "../componentes/MiComponente/MiComponente";
 import MisProductos from "../componentes/MisProductos/MisProductos";
+import MiContadorConUseReducer from "../componentes/MiContadorConUseReducer/MiContadorConUseReducer";
 
 function Router() {
   return (
@@ -17,6 +18,10 @@ function Router() {
           <Route path="/MiContador" element={<MiContador />} />
           <Route path="/MiComponente" element={<MiComponente />} />
           <Route path="/MisProductos" element={<MisProductos />} />
+          <Route
+            path="/miContadorUseReducer"
+            element={<MiContadorConUseReducer />}
+          />
         </Routes>
       </div>
     </BrowserRouter>

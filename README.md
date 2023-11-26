@@ -77,9 +77,7 @@
 
 ## Preguntas teóricas
 
----
 
-## Preguntas teóricas
 
 #### 1. ¿Qué es React Context y para qué se utiliza en el desarrollo web con React?
 

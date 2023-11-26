@@ -18,6 +18,9 @@ const Nav = () => {
         <li>
           <Link to="/miContadorUseReducer">MiContadorConUseReducer</Link>
         </li>
+        <li>
+          <Link to="/MiToDoList">MiToDoList</Link>
+        </li>
       </ul>
     </nav>
   );

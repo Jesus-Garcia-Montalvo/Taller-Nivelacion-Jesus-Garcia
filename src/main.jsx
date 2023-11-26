@@ -1,5 +1,10 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
-import Router from "./Routes/router";
+import AppRouter from "./Routes/AppRouter";
+import { ToDoProvider } from "./Context/ToDoContext";
 
-ReactDOM.createRoot(document.getElementById("root")).render(<Router />);
+ReactDOM.createRoot(document.getElementById("root")).render(
+  <ToDoProvider>
+    <AppRouter />
+  </ToDoProvider>
+);

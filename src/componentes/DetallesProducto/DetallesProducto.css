@@ -18,7 +18,7 @@
     padding: 20px;
     border: 1px solid #888;
     max-width: 80%; /* Cambiado de width a max-width */
-    overflow-y: auto; /* Añadido para permitir desplazamiento interno si es necesario */
+    overflow-y: auto; /* Añadido para permitir desplazamñiento interno si es necesario */
   }
   
   .close {
